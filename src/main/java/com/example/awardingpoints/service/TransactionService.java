@@ -1,9 +1,11 @@
 package com.example.awardingpoints.service;
 
-import com.example.awardingpoints.entity.Transaction;
+import com.example.awardingpoints.dto.TransactionResponse;
+
 
 public interface TransactionService  {
-    void recordTransaction(Transaction transaction) ;
+    TransactionResponse calculatePointsByCustomer(Long customerId);
+
 }
 
 
